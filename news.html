@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script scr="js/news.js"></script>
+	<div class="header">
+			<div class="title">
+				<h1><font face="Monotype Corsiva" color="black">Online Tax Calculator</font></h1>
+			</div>
+
+				<title>Online Tax Calculator</title>
+					
+
+						<div class="links">
+							<nav>
+								<ul>
+									<li class="nav-item" role="presentation"><a class="nav-link active" href="base.html">Home</a></li>
+									<li class="nav-item" role="presentation"><a class="nav-link active" href="home.html">Form</a></li>
+								</ul>
+							</nav>
+						</div>
+	</div>
+
+</head>
+<body>
+
+    {% extends 'base.html' %}
+
+    {% block content %}
+        {% for obj in data %}
+            <h1>{{obj.news_header}}</h1>
+            <p>{{obj.date}} {{obj.reporter}}</p>
+            <h2>{{obj.news}}<br></h2>
+            {% endfor %}
+
+    {% endblock %}
+
+</body>
