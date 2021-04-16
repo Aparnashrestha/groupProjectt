@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<div class="header">
+			<div class="title">
+				<h1><font face="Monotype Corsiva" color="black">Online Tax Calculator</font></h1>
+			</div>
+
+				<title>Online Tax Calculator</title>
+					<link rel="stylesheet" type="text/css" href="style.css">
+
+						<div class="links">	
+							<nav>
+								<ul>
+									<li class="nav-item" role="presentation"><a class="nav-link active" href="news.html">News</a></li>
+									<li class="nav-item" role="presentation"><a class="nav-link active" href="base.html">Home</a></li>
+								</ul>
+							</nav>
+						</div>
+	</div>
+
+</head>
+<body>
+	<div class="top-title">
+		<h1>Give Us Your Details</h1>
+	</div>
+	<div class="container">
+	<form id="form1">
+		<div class="form-row">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="group"> 
+						<label class="control-label">
+							<h2 class="top-label">Maritial Status</h2>
+						</label>
+						<select name="taxpayerType" id="taxpayerType" class="form-control">							
+							<option item="0" value="0">
+								Unmarried
+							</option>
+							<option item="1" value="1">
+								Married
+							</option>
+						</select>
+					</div>
+				</div>
+					
+						
+						<div class="group">
+							<label class="control-label">
+								<h2 class="top-label">Fiscal Year</h2>
+							</label> 
+							<select name="fiscalyear" id="fiscalyear" class="form-control">
+								<option value="0" id="f1">
+									2074/075
+								</option>
+								<option value="1" id="f2">
+									2075/076
+								</option>
+								<option value="2" id="f3">
+									2076/077
+								</option>
+								<option value="3" id="f4">
+									2077/078
+								</option>
+							</select>
+						</div>
+					
+				</div>
+			</div>
+			<hr class="separation">
+
+			<div class="form-row">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="group">
+							<label class="control-label">
+								<h2 class="top-label">Monthly Salary</h2>
+							</label> 
+							<input type="text" id="monthlysal" class="form-control" maxlength="8">
+						</div>
+						<div class="group">
+							<label class="control-label">
+								<h2 class="top-label">Bonus</h2>
+							</label> 
+							<input type="text" id="bonus" class="form-control" maxlength="7">
+						</div>
+						<div class="group line">
+							<label class="control-label">
+								<h2 class="top-label">Total Salary</h2>
+							</label> 
+							<input type="text" id="totalsal" class="form-control" maxlength="10"> 
+							<input type="hidden" id="deductsal">
+							<input type="hidden" id="totaldeduction">
+						</div>
+					</div>
+					<br>
+					<br>
+					<br>
+				<hr class="separation">
+				<br>
+				<br>
+						<div class="col-sm-6">
+							<div class="group">
+								<label class="control-label">
+									<h2 class="top-label">Total Amount</h2>
+								</label>
+								<input type="text" class="form-control" maxlength="7">
+							</div>							
+							<div class="group">
+								<label class="control-label">
+									<h2 class="top-label">Employees Provident Fund</h2>
+								</label> 
+								<input type="text" class="form-control" maxlength="7">
+							</div>
+							<div class="group">
+								<label class="control-label">
+									<h2 class="top-label">Citizen Investment Trust</h2>
+								</label>
+								 <input type="text" class="form-control" maxlength="7">
+								</div>
+								<div class="group">
+									<label class="control-label">
+										<h2 class="top-label">Insurance</h2>
+									</label> 
+									<input type="text" class="form-control" maxlength="7">
+								</div>
+							</div>
+						</div>
+				</div>
+				
+				<hr class="separation">
+					
+					<div class="form-row">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="group">
+									<label class="control-label">
+										<h2 class="top-label">Annual Medical Expense</h2>
+									</label> 
+									<input type="text" class="form-control" maxlength="7">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="group">
+									<label class="control-label">
+										<h2 class="top-label">Medical TAX</h2>
+									</label>
+									<input type="text" id="medtax" class="form-control" readonly="readonly">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="button-row">
+						<div class="col-xs-6">
+							<input type="submit" class="button" value="Calculate">
+						</div>
+					</div>
+				</form>
+	</div>
+	<!-- <h1>
+		
+		GIVE YOUR DETAIL
+	
+	</h1>
+	<div class="forms">
+
+		<form action="calc" method="post">
+    	
+	
+    		Enter your Jobs: <input type="text" name="job">
+			<br>
+				<br>    	
+			Enter your Salary: <input type="text" name='salary'>
+			<br>
+				<br>
+
+				<input type = "submit">
+		</form> -->
+
+	</div>
+		<footer>
+			
+	
+			
+		</footer>
+</body>
+</html>
